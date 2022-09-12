@@ -2,9 +2,9 @@
 /**
 *main- serves as the main function or entrypoint
 *
-*Return- this returns zero after executing all codes properly else returns a non-zero output.
+*return- this returns zero after executing all codes
 */
-int main(void)
+void main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
 		return (0);
