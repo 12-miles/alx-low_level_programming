@@ -4,7 +4,7 @@
 *
 *return- this returns zero after executing all codes
 */
-void main(void)
+int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
 		return (0);
