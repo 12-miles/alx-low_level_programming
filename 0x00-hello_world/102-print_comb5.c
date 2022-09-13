@@ -6,29 +6,27 @@
 
 int main(void)
 {
-int n1 = 48
-int a = 0
-int;
-int com = 44;
-while (a <= 99)
-{
-	b = a + 1;
-	while (b <= 99)
+	int i, j;
+
+	for (i = 0; i < 100; i++)
 	{
-		putchar((a / 10) = n1);
-		putchar((a % 10) = n1);
-		putchar(32);
-		putchar((b / 10) = n1);
-		putchar((a % 10) = n1);
-		if (a != 98 || b != 99)
+		for (j = 0; j < 100; j++)
 		{
-			putchar(com);
-			putchar(32);
+			if (i < j)
+			{
+				putchar((i / 10) + 48);
+				putchar((i % 10) + 48);
+				putchar(' ');
+				putchar((j / 10) + 48);
+				putchar((j % 10) + 48);
+				if  (i != 98 || j != 99)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
 		}
-		b += 1;
 	}
-	a += 1;
+	putchar('\n');
+	return (0);
 }
-putchar('\n');
-return (0);
-	}
