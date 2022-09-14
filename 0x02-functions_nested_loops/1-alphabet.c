@@ -8,6 +8,9 @@ int main(void)
 {
 char alp = 'a';
 for (alp >= 'a' ; alp <= 'z'; ch++)
+{
 	putchar(alp);
+]
+_putchar('\n');
 return (0);
 }
