@@ -1,47 +1,18 @@
 #include <stdio.h>
+#include <string.h>
 #include "main.h"
 
 /**
-* print_array - prints n element of array
-* @a: array
-* @n: number of elements
-* Return: nothing
+*print_rev - Prints a string in reverse order
+*@s: String to reverse
+*Return: Nothing
 */
 
-void print_array(int *a, int n)
+void print_rev(char *s)
 {
-	int inc;
+	int len = strlen(s);
 
-	for (inc = 0; inc < n ; inc++)
-	{
-		if (inc != n - 1)
-			printf("%d, ", a[inc]);
-		else
-			printf("%d", a[inc]);
-
-	}
+	while (len--)
+		putchar(*(s + len));
 	putchar(10);
-}#include <stdio.h>
-#include "main.h"
-
-/**
- * * print_array - prints n element of array
- * * @a: array
- * * @n: number of elements
- * * Return: nothing
- * */
-
-void print_array(int *a, int n)
-{
-		int inc;
-
-			for (inc = 0; inc < n ; inc++)
-			{
-						if (inc != n - 1)
-										printf("%d, ", a[inc]);
-						else
-										printf("%d", a[inc]);
-
-			}
-				putchar(10);
-}
+}}
